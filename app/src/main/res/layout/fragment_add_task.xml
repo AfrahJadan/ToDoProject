@@ -6,6 +6,9 @@
     <variable
         name="vieWModel"
         type="com.example.recycleviewtes.model.ToDoviewModel" />
+<variable
+    name="fragmentAddTask"
+    type="com.example.recycleviewtes.FragmentAdd" />
 </data>
 
     <FrameLayout
@@ -21,21 +24,29 @@
             android:layout_marginStart="30dp">
 
             <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="533dp"
+                android:layout_width="386dp"
+                android:layout_height="374dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
                 android:orientation="vertical"
-                android:padding="8dp"
-                tools:ignore="MissingConstraints,UselessParent">
+                android:padding="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.768"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
 
                 <EditText
                     android:id="@+id/textViewS"
                     android:layout_width="131dp"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:hint="@string/title_task"
+                    android:hint="@string/titleTask"
                     android:importantForAutofill="no"
                     android:inputType="text"
                     android:minHeight="48dp"
+                    android:padding="20dp"
                     android:text="@={vieWModel.title}"
                     tools:text="TitleTask" />
 
@@ -48,33 +59,36 @@
                     android:importantForAutofill="no"
                     android:inputType="text"
                     android:minHeight="48dp"
+                    android:padding="20dp"
+                    android:text="@={vieWModel.decTitle}"
                     tools:text="Description" />
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"/>
 
+                <EditText
+                    android:id="@+id/Date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:hint="@string/dateTask"
+                    android:inputType="date"
+                    android:minHeight="50dp"
+                    android:padding="20dp"
+                    android:text="@={vieWModel.data}"
+                    android:textStyle="bold" />
 
-
-                <TextView
+                <EditText
                     android:id="@+id/material_timepicker_view"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="center"
                     android:layout_marginTop="20dp"
-                    android:fontFamily="serif"
-                    android:hint="@string/time"
+                    android:fontFamily="sans-serif-black"
+                    android:hint="@string/timeTask"
+                    android:minHeight="50dp"
+                    android:text="@={vieWModel.time}"
                     android:textColor="@color/black"
-                    android:textSize="25sp"
                     android:textStyle="bold"
                     tools:ignore="TextContrastCheck" />
 
-                <TimePicker
-                    android:id="@+id/material_textinput_timepicker"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_marginStart="50dp"
-                    android:layout_marginTop="15dp"
-                    android:clipToPadding="true"
-                    tools:ignore="InvalidId" />
 
                 <Button
                     android:id="@+id/save_button"
@@ -82,9 +96,10 @@
                     android:layout_height="53dp"
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="@dimen/cardview_default_radius"
+                    android:backgroundTint="@color/purple_200"
+                    android:onClick="@{()->vieWModel.addTask()}"
                     android:text="@string/save_changes"
                     android:textColor="#000000"
-                    android:backgroundTint="@color/purple_200"
                     tools:ignore="InvalidId,TextContrastCheck" />
 
             </LinearLayout>

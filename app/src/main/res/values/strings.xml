@@ -16,4 +16,7 @@
     <string name="date">date</string>
     <string name="titletask">TitleTask</string>
     <string name="description">Description</string>
+    <string name="titleTask">Title_Task</string>
+    <string name="dateTask">Date:</string>
+    <string name="timeTask">Time:</string>
 </resources>

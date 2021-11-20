@@ -6,7 +6,8 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:contex=".TaskFirstPage">
+    tools:contex=".TaskFirstPage"
+    android:background="@drawable/cat2">
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recycleView"
         android:layout_width="match_parent"
@@ -33,6 +34,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:backgroundTint="@color/purple_200"
         tools:ignore="MissingConstraints,RtlHardcoded" />
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

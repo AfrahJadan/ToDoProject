@@ -23,6 +23,9 @@
         <action
             android:id="@+id/action_taskFirstPage_to_fragmentAdd_Task"
             app:destination="@id/fragmentAdd_Task" />
+        <action
+            android:id="@+id/action_taskFirstPage_to_showListFragment"
+            app:destination="@id/showListFragment" />
     </fragment>
     <fragment
         android:id="@+id/fragmentTaskEdit"
@@ -35,5 +38,9 @@
     <fragment
         android:id="@+id/showListFragment"
         android:name="com.example.recycleviewtes.ShowListFragment"
-        android:label="ShowListFragment" />
+        android:label="ShowListFragment" >
+        <action
+            android:id="@+id/action_showListFragment_to_taskFirstPage"
+            app:destination="@id/taskFirstPage" />
+    </fragment>
 </navigation>
