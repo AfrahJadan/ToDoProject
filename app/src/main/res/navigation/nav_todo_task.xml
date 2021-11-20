@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_todo_task"
+    app:startDestination="@id/taskFirstPage">
+
+    <fragment
+        android:id="@+id/fragmentAdd_Task"
+        android:name="com.example.recycleviewtes.FragmentAdd"
+        android:label="FragmentAdd_Task" >
+        <action
+            android:id="@+id/action_fragmentAdd_Task_to_taskFirstAdd"
+            app:destination="@id/taskFirstPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/taskFirstPage"
+        android:name="com.example.recycleviewtes.TaskFirstPage"
+        android:label="TaskFirstPage">
+        <action
+            android:id="@+id/action_taskFirstAdd_to_fragmentTaskEdit"
+            app:destination="@id/fragmentTaskEdit" />
+        <action
+            android:id="@+id/action_taskFirstPage_to_fragmentAdd_Task"
+            app:destination="@id/fragmentAdd_Task" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTaskEdit"
+        android:name="com.example.recycleviewtes.FragmentTaskEdit"
+        android:label="FragmentTaskEdit" >
+        <action
+            android:id="@+id/action_fragmentTaskEdit_to_taskFirstAdd"
+            app:destination="@id/taskFirstPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/showListFragment"
+        android:name="com.example.recycleviewtes.ShowListFragment"
+        android:label="ShowListFragment" />
+</navigation>

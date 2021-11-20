@@ -6,10 +6,13 @@
     android:layout_height="match_parent">
 
  <androidx.fragment.app.FragmentContainerView
-    android:name="com.example.recycleviewtes.TaskFirstAdd"
+     android:name="androidx.navigation.fragment.NavHostFragment"
+     app:defaultNavHost="true"
+     app:navGraph="@navigation/nav_todo_task"
      android:id="@+id/frag_cont_view"
      android:layout_width="0dp"
      android:layout_height="0dp"
+     android:background="#FFFBE6"
      tools:ignore="MissingConstraints"
      app:layout_constraintBottom_toBottomOf="parent"
      app:layout_constraintLeft_toLeftOf="parent"

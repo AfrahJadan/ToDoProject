@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FragmentTaskEdit">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp"
+            tools:ignore="UselessParent"
+            android:divider="?android:dividerHorizontal"
+            android:showDividers="middle">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:id="@+id/textView1"
+                android:hint="@string/title_task"
+                android:minHeight="50dp"
+                android:text="@string/titletask">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/textView2"
+                android:hint="@string/more_detailed"
+                android:text="@string/description">
+<com.google.android.material.textfield.TextInputEditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fontFamily="sans-serif-medium"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/date_input"
+                android:hint="@string/date"
+                app:endIconDrawable="@drawable/ic_baseline_calendar_today_24"
+                app:endIconMode="custom">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:inputType="date"
+                    android:textSize="15sp"
+                    />
+        </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:hint="@string/time"
+                app:endIconDrawable="@drawable/ic_baseline_more_time_24"
+                app:endIconMode="custom">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:textSize="15sp"/>
+            </com.google.android.material.textfield.TextInputLayout>
+<!--            <TextView-->
+<!--                android:id="@+id/material_timepicker_view"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:fontFamily="casual"-->
+<!--                android:hint="@string/time"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textSize="25sp"-->
+<!--                android:textStyle="bold"-->
+<!--                tools:ignore="TextContrastCheck" />-->
+
+<!--            <TimePicker-->
+<!--                android:id="@+id/material_textinput_timepicker"-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_marginStart="50dp"-->
+<!--                android:layout_marginTop="15dp"-->
+<!--                android:clipToPadding="true"-->
+<!--                android:outlineSpotShadowColor="@color/black"-->
+<!--                tools:ignore="InvalidId" />-->
+
+
+            <Button
+                android:id="@+id/save_button"
+                android:layout_width="311dp"
+                android:layout_height="53dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="@dimen/cardview_default_radius"
+                android:backgroundTint="#E9C05F"
+                android:text="@string/edit"
+                android:textColor="@color/white"
+                tools:ignore="InvalidId,TextContrastCheck" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+</layout>
+
+    <!--            <TextView-->
+    <!--                android:id="@+id/date_input"-->
+    <!--                android:layout_width="wrap_content"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginTop="20dp"-->
+    <!--                android:fontFamily="casual"-->
+    <!--                android:hint="@string/date"-->
+    <!--                android:textColor="@color/black"-->
+    <!--                android:textSize="25sp"-->
+    <!--                android:textStyle="bold"-->
+    <!--                tools:ignore="TextContrastCheck" />-->
+
+    <!--            <DatePicker-->
+    <!--                android:id="@+id/date_picker_actions"-->
+    <!--                android:layout_width="50dp"-->
+    <!--                android:layout_height="50dp"-->
+    <!--                android:layout_marginStart="50dp"-->
+    <!--                tools:ignore="InvalidId" />-->

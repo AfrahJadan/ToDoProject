@@ -1,5 +1,6 @@
 package com.example.recycleviewtes
 
+import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -7,7 +8,8 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.recycleviewtes.data.task
 
-class tas_Adapter(var dataList:List<task>):RecyclerView.Adapter<tas_Adapter.ItemViewHolder>() {
+class ItemAdapter( var dataList:List<task>
+    ):RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
 
     class ItemViewHolder(view:View):RecyclerView.ViewHolder(view){
         val viewHold:TextView =view.findViewById(R.id.titleTask) //edit from xml id

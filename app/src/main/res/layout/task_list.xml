@@ -1,76 +1,79 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".MainActivity">
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:padding="10dp"
-    android:layout_marginHorizontal="10dp">
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/show_task"
-        android:layout_width="300dp"
-        android:layout_height="400dp"
-        android:layout_margin="10dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        app:cardBackgroundColor="@color/purple_200"
-        android:foreground="?selectableItemBackground"
-        android:clickable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-        tools:ignore="MissingConstraints">
 
-        <LinearLayout
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginHorizontal="10dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/show_task"
             android:layout_width="300dp"
             android:layout_height="400dp"
-            android:orientation="vertical"
-            android:padding="16dp">
+            android:layout_margin="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            app:cardBackgroundColor="#FEEAE6"
+            android:foreground="?selectableItemBackground"
+            android:clickable="true"
 
-            <TextView
-                android:id="@+id/titleTask"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="@string/title_task"
-                android:padding="20dp"/>
+            tools:ignore="MissingConstraints">
 
-            <TextView
-                android:id="@+id/mo_det"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="@string/more_detailed"
-                android:padding="20dp"/>
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="400dp"
+                android:orientation="vertical"
+                android:padding="16dp">
 
-            <TextView
-                android:id="@+id/date_task"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="@string/date"
-                tools:ignore="TextViewEdits"
-                android:padding="20dp"/>
+                <TextView
+                    android:id="@+id/titleTask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/title_task"
+                    android:padding="20dp" />
 
-            <TextView
-                android:id="@+id/time"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:hint="@string/time"
-                android:padding="20dp"
-                tools:ignore="InvalidId" />
+                <TextView
+                    android:id="@+id/mo_det"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/more_detailed"
+                    android:padding="20dp" />
 
-            <ImageButton
-                android:id="@+id/delete_icon"
-                android:layout_width="246dp"
-                android:layout_height="48dp"
-                android:contentDescription="@string/delete"
-                android:padding="20dp"
-                android:src="@drawable/ic_baseline_delete_24"
-                tools:ignore="TouchTargetSizeCheck" />
+                <TextView
+                    android:id="@+id/date_task"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/date"
+                    tools:ignore="TextViewEdits"
+                    android:padding="20dp" />
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/time"
+                    android:padding="20dp"
+                    tools:ignore="InvalidId" />
+
+                <ImageButton
+                    android:id="@+id/delete_icon"
+                    android:layout_width="76dp"
+                    android:layout_height="50dp"
+                    android:background="@color/material_on_background_emphasis_medium"
+                    android:contentDescription="@string/delete"
+                    android:padding="20dp"
+                    android:src="@drawable/ic_baseline_delete_24"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+            </LinearLayout>
 
 
-    </com.google.android.material.card.MaterialCardView>
-</androidx.constraintlayout.widget.ConstraintLayout>
-</FrameLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

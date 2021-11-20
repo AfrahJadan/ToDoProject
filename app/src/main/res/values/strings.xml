@@ -2,7 +2,6 @@
     <string name="app_name">ToDoProject</string>
     <string name="textview">TextView</string>
     <string name="textViewDes">TextViewDes</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_input">Title_Input</string>
     <string name="dec_input">Dec_Input</string>
@@ -10,7 +9,11 @@
     <string name="task_added">task_added</string>
     <string name="title_task">title_task</string>
     <string name="more_detailed">more_detailed</string>
-    <string name="date">date</string>
     <string name="time">time</string>
     <string name="delete">delete</string>
+    <string name="save_changes">save_changes</string>
+    <string name="edit">edit</string>
+    <string name="date">date</string>
+    <string name="titletask">TitleTask</string>
+    <string name="description">Description</string>
 </resources>
