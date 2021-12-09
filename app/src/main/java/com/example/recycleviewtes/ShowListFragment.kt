@@ -33,7 +33,7 @@
             binding?.apply {
                 lifecycleOwner=viewLifecycleOwner
                 viEwModel=sharedViewModel
-
+///just check
             }
         }
     }
