@@ -88,6 +88,23 @@
                     android:textColor="@color/black"
                     android:textStyle="bold"
                     tools:ignore="TextContrastCheck" />
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:id="@+id/tvDate"-->
+<!--                    android:text="@string/date_pic"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    />-->
+<!--                <Button-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:id="@+id/btn_Show"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:backgroundTint="@color/white"-->
+<!--                    android:textSize="20sp"-->
+<!--                    />-->
 
 
                 <Button
@@ -97,7 +114,6 @@
                     android:layout_marginStart="30dp"
                     android:layout_marginTop="@dimen/cardview_default_radius"
                     android:backgroundTint="@color/purple_200"
-                    android:onClick="@{()->vieWModel.addTask()}"
                     android:text="@string/save_changes"
                     android:textColor="#000000"
                     tools:ignore="InvalidId,TextContrastCheck" />

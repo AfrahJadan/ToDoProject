@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import com.example.recycleviewtes.data.Task
 import com.example.recycleviewtes.data.TaskDataSorce
 
+
 class ToDoviewModel: ViewModel() {
 
     val title =  MutableLiveData<String>("") // change to liveData
@@ -25,14 +26,13 @@ class ToDoviewModel: ViewModel() {
 //    val time: LiveData<String> = _time
 
     fun addTask(){
-var theTaskToBeadded= TaskDataSorce()
+val theTaskToBeadded= TaskDataSorce()
         theTaskToBeadded.addTask(Task(title.value.toString(),decTitle.value.toString(),data.value.toString(),time.value.toString()))
 
 
+fun editTask(index:Int){
 
-//        var task=task(title.value!!,decTitle.value!!,data.value!!,time.value!!)
-//
-//        task_list.add(task)
+}
 
     }
 }

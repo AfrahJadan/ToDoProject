@@ -19,4 +19,5 @@
     <string name="titleTask">Title_Task</string>
     <string name="dateTask">Date:</string>
     <string name="timeTask">Time:</string>
+    <string name="date_pic">Date</string>
 </resources>

@@ -35,14 +35,11 @@
         val action =TaskFirstPageDirections.actionTaskFirstPageToFragmentAddTask()
         findNavController().navigate(action)
     }
+
      binding?.recycleView?.adapter = ItemAdapter(dataSource)
 
         }
     }
-    //TRY TO PUT A DATA PICKER
-    //val datePicker = // try to let the date work
-    //    MaterialDatePicker.Builder.datePicker()
-    //        .setSelection(MaterialDatePicker.todayInUtcMilliseconds())
-    //datePicker.build()
+
 
 
